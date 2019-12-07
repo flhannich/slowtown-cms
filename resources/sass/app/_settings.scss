@@ -1,0 +1,85 @@
+
+div#settings {
+}
+
+div#settings__controls {
+  display: flex;
+  margin: 21px -6px 44px 0;
+}
+
+div#settings__register {
+  top: 54px;
+  max-height: calc(100vh - 60px);
+  overflow: scroll;
+  top: 54px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+div.settings__description {
+   h3 {
+     margin-bottom: 16px;
+   }
+   span {
+     color: $typeLighter;
+   }
+}
+
+div.block {
+  margin-bottom: 72px;
+  label {
+    margin: 27px 0 16px 0;
+  }
+}
+
+div#settings__image {
+  margin-bottom: 16px;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  div.file__delete {
+    margin-top: 16px;
+  }
+}
+
+div#settings__favicon {
+  margin-bottom: 16px;
+  label {
+    margin: 0 0 16px 0;
+  }
+  img {
+    width: 27px;
+    height: 27px;
+    max-height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  div.file__delete {
+    margin-top: 16px;
+  }
+}
+
+div#settings__title {
+  margin-bottom: 44px;
+}
+
+div#settings textarea {
+  width: 100%;
+}
+
+div#settings label {
+  display: block;
+}
+
+
+div#settings__website {
+}

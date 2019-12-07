@@ -1,0 +1,234 @@
+// div#page__navigation {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(255,255,255, 1);
+//   padding: 0 16px;
+//   height: 44px;
+//   z-index: 120;
+//   width: 100%;
+// }
+
+div#page__save {
+  display: inline-block;
+  margin: 3.5px 3.5px 0 3.5px;
+  line-height: 34px;
+  vertical-align: top;
+}
+
+div#page__settings__trigger {
+}
+
+  div#page__settings {
+    position: absolute;
+    top: 63px;
+    right: 10px;
+    padding-bottom: 44px;
+    @include modal--large;
+    div.triangle {
+      top: -14px;
+      right: 16px;
+    }
+    & > div {
+      padding: 0 27px;
+    }
+  }
+
+  div#page__settings__header {
+    display: flex;
+    height: 54px;
+    font-size: 0;
+    display: none;
+    .ic {
+      margin: 10px -10px 10px 0;
+    }
+    span {
+      line-height: 54px;
+    }
+  }
+
+div#page__drag__trigger {
+  margin-right: 10px;
+}
+
+div#page__settings__footer {
+  font-size: 0;
+  padding: 16px 27px !important;
+  margin: 27px 0 -44px 0;
+  button {
+    margin-right: 10px;
+  }
+}
+
+div#page {
+  margin-top: 54px;
+  margin-bottom: 44px;
+  min-height: 62vh;
+  &.is-handle .page__items {
+    cursor: grab;
+  }
+  section {
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    min-height: 44px;
+    &.is-active {
+    }
+    .item__settings {
+      opacity: 1
+    }
+  }
+}
+
+.item__settings {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 131px);
+  // transform: translateX(-50%);
+  height: 54px;
+  line-height: 54px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0 16px;
+  background-color: #383838;
+  border-radius: 3px;
+  white-space: nowrap;
+  z-index: 200;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.14);
+  .ic__editor,
+  button {
+    border: none;
+    height: 34px;
+    margin-top: 10px;
+    opacity: 1;
+    &:hover {
+      opacity: .54;
+    }
+    &:active {
+      opacity: 1;
+    }
+    &.is-active {
+      border: none;
+      background-color: #282828;
+    }
+  }
+  div.item__settings__form {
+    position: absolute;
+    top:  0;
+    left: -40px;
+    right: -40px;
+    bottom: 0;
+    z-index: 1;
+    padding: 0 16px 0 16px;
+    background-color: #383838;
+    border-radius: 3px;
+    button {
+      margin-top: 0;
+    }
+    input {
+      display: inline-block;
+      border: none;
+      max-width: 95px;
+      color: #eee;
+      border: 1px solid #585858;
+      border-radius: 2px;
+      padding: 0 6px;
+    }
+  }
+  select.is--app {
+    display: inline-block;
+    margin: 10px 6px 0 0;
+    padding-left: 6px;
+    width: inherit;
+    background-color: transparent;
+    color: #eee;
+    border: none;
+  }
+  .triangle {
+    position: absolute;
+    top: 54px;
+    height: 0;
+    width: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px solid transparent;
+    border-top: 7px solid #383838;
+  }
+  &.is-focused {
+      display: flex !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+div.item__settings {
+  display: none;
+  &.is-active {
+    display: flex;
+  }
+}
+
+.item__droparea {
+  position: relative;
+  width: calc(100% - 32px);
+  height: 54px;
+  margin: 27px 16px 10px 16px;
+  border-radius: 3px;
+  // border: 1px dotted rgba(0, 0, 0, .54);
+  // background-color: rgba(150, 213, 177, .24);
+  background-color: #eee;
+  text-align: center;
+  cursor: pointer;
+  .ic__editor {
+    margin-top: 9px;
+  }
+  &:hover {
+    // border: 1px dotted rgba(150, 213, 177, 1);
+    background-color: rgba(150, 213, 177, .24);
+  }
+  &:active {
+    // border: 1px dotted rgba(150, 213, 177, 1);
+    background-color: rgba(150, 213, 177, .24);
+  }
+}
+
+.item__droparea-empty {
+  height: 440px;
+  width: 62%;
+  min-width: 300px;
+  margin: 72px auto 0 auto;
+  background-color: rgba(150, 213, 177, .24);
+  .ic__editor {
+    margin-top: 4px;
+  }
+  &:hover {
+    background-color: rgba(150, 213, 177, .54);
+  }
+}
+
+div.item__title {
+  position: relative;
+}
+
+div.controls__trigger {
+  position: absolute;
+  display: none;
+  top: 6px;
+  right: 27px;
+  background-color: #383838;
+  border-radius: 2px;
+  cursor: pointer;
+  &.is-active {
+    background-color: $primaryColor;
+    display: block;
+  }
+}
+
+
+.wrapper {
+  height: 100%;
+}

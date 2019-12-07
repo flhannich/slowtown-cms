@@ -1,0 +1,38 @@
+div#profile {
+}
+
+div#profile__controls {
+  display: flex;
+  margin: 21px -6px 44px 0;
+}
+
+div.profile__description {
+   h3 {
+     margin-bottom: 16px;
+   }
+   span {
+     color: $typeLighter;
+   }
+}
+
+div#profile__image {
+  cursor: pointer;
+  div.background__image {
+    display: block;
+    width: 116px;
+    height: 116px;
+    border-radius: 3px;
+    border: none;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  div.file__delete {
+    margin-top: 6px;
+  }
+}
+
+div.password__controls {
+  margin-top: 27px;
+}

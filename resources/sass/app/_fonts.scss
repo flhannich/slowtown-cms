@@ -1,0 +1,205 @@
+// @font-face {
+//   font-family: 'ui-font';
+//   src: url('/fonts/app/inter-light-beta-webfont.eot');
+//   src:
+//     url('/fonts/app/inter-light-beta-webfont?#iefix') format('embedded-opentype'),
+//     url('/fonts/app/inter-light-beta-webfont.woff') format('woff'),
+//     url('/fonts/app/inter-light-beta-webfont.ttf') format('truetype'),
+//     url('/fonts/app/inter-light-beta-webfont.svg#webfont') format('svg');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+@font-face {
+  font-family: 'ui-font';
+  src: url('/fonts/app/inter-regular-webfont.eot');
+  src:
+    url('/fonts/app/inter-regular-webfont?#iefix') format('embedded-opentype'),
+    url('/fonts/app/inter-regular-webfont.woff') format('woff'),
+    url('/fonts/app/inter-regular-webfont.ttf') format('truetype'),
+    url('/fonts/app/inter-regular-webfont.svg#webfont') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'ui-font';
+  src: url('/fonts/app/inter-bold-webfont.eot');
+  src:
+    url('/fonts/app/inter-bold-webfont?#iefix') format('embedded-opentype'),
+    url('/fonts/app/inter-bold-webfont.woff') format('woff'),
+    url('/fonts/app/inter-bold-webfont.ttf') format('truetype'),
+    url('/fonts/app/inter-bold-webfont.svg#webfont') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+span {
+  text-shadow: #fff 0 1px;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  color: $typeBlack;
+}
+
+
+span {
+  font-family: 'ui-font', sans-serif;
+  font-size: 12px;
+  line-height: 1.24rem;
+  letter-spacing: 0.03em;
+  opacity: .85
+}
+
+button,
+option,
+select.is--app,
+span.is-small,
+.tag  {
+  font-family: 'ui-font', sans-serif;
+  font-size: 11px;
+  line-height: 1.24rem;
+  letter-spacing: 0.05em;
+  opacity: .85
+}
+
+button  {
+  font-family: 'ui-font', sans-serif;
+  font-size: 12px;
+  line-height: 1.24rem;
+  letter-spacing: 0.03em;
+  opacity: .85
+}
+
+input,
+textarea,
+div.textarea,
+div[contenteditable=true],
+input {
+  font-family: 'ui-font', sans-serif;
+  font-size: 12px;
+  line-height: 1.24rem;
+  letter-spacing: 0.00em;
+  opacity: .85
+}
+
+
+span.is-paragraph {
+  font-family: 'ui-font', sans-serif;
+  font-size: 13px;
+  line-height: 1.33rem;
+  word-spacing: -0.03em;
+  letter-spacing: 0.009em;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'ui-font', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.0em;
+  line-height: 27px;
+}
+
+h2 {
+  font-family: 'ui-font', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.0em;
+  line-height: 27px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+// h2 {
+//   font-family: 'ui-font', sans-serif;
+//   font-size: 27px;
+//   font-weight: 800;
+//   letter-spacing: 0.0em;
+//   line-height: 27px;
+  // text-transform: uppercase;
+  // letter-spacing: 0.07em;
+// }
+
+h3 {
+  font-family: 'ui-font', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  // letter-spacing: 0.007em;
+  // word-spacing: -0.03em;
+  line-height: 1.5em;
+  }
+
+
+h4 {
+  font-family: 'ui-font', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.33em;
+}
+
+h5 {
+  font-family: 'ui-font', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h6 {
+  font-family: 'ui-font', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+a {
+  cursor: pointer;
+  &:link {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  &:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  &:active {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+a.menu {
+  font-family: 'ui-font', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 11px;
+  .is-active {
+    color: $primaryColor;
+  }
+}
+
+label {
+  font-family: 'ui-font', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  // text-transform: uppercase;
+  font-size: 11px;
+  color: $typeLighter;
+}
