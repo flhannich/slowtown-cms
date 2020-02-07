@@ -125,13 +125,14 @@
   min-width: 34px;
   border: none;
   border-radius: 3px;
-  border: 1px solid #888;
+  border: 1px solid $primaryColor;
   text-align: center;
   opacity: 1;
   cursor: pointer;
   span {
     line-height: 15px;
     font-size: 10px;
+    color: $primaryColor;
     &:after {
       bottom: -6px;
       content: "";
@@ -150,7 +151,7 @@
       left: 16px;
       position: absolute;
       width: 0px;
-      border-color: #888 transparent;
+      border-color: $primaryColor transparent;
       border-style: solid;
       border-width: 6px 0px 0px 8px;
     }

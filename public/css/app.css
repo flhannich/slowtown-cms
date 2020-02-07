@@ -1083,6 +1083,10 @@ div#project__settings__trigger {
   margin-left: 10px;
 }
 
+div#project__preview__trigger {
+  display: none;
+}
+
 div#project__settings {
   position: absolute;
   top: 63px;
@@ -1896,7 +1900,7 @@ div#dashboard__footer ul li a {
   min-width: 34px;
   border: none;
   border-radius: 3px;
-  border: 1px solid #888;
+  border: 1px solid #1BA672;
   text-align: center;
   opacity: 1;
   cursor: pointer;
@@ -1905,6 +1909,7 @@ div#dashboard__footer ul li a {
 .ic__comment span {
   line-height: 15px;
   font-size: 10px;
+  color: #1BA672;
 }
 
 .ic__comment span:after {
@@ -1926,7 +1931,7 @@ div#dashboard__footer ul li a {
   left: 16px;
   position: absolute;
   width: 0px;
-  border-color: #888 transparent;
+  border-color: #1BA672 transparent;
   border-style: solid;
   border-width: 6px 0px 0px 8px;
 }
@@ -2738,7 +2743,7 @@ figure textarea {
   min-width: 34px;
   border: none;
   border-radius: 3px;
-  border: 1px solid #888;
+  border: 1px solid #1BA672;
   text-align: center;
   opacity: 1;
   cursor: pointer;
@@ -2747,6 +2752,7 @@ figure textarea {
 .ic__comment span {
   line-height: 15px;
   font-size: 10px;
+  color: #1BA672;
 }
 
 .ic__comment span:after {
@@ -2768,7 +2774,7 @@ figure textarea {
   left: 16px;
   position: absolute;
   width: 0px;
-  border-color: #888 transparent;
+  border-color: #1BA672 transparent;
   border-style: solid;
   border-width: 6px 0px 0px 8px;
 }

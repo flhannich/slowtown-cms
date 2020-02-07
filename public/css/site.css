@@ -5,6 +5,7 @@ html, body {
 	/* font-size: 100%;
 	font: inherit; */
 	font-size: 16px;
+	color: #282828;
 	vertical-align: baseline;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -101,6 +102,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'meta';
+  src: url('/fonts/LatoLatin-Black.eot');
+  src:
+    url('/fonts/LatoLatin-Black?#iefix') format('embedded-opentype'),
+    url('/fonts/LatoLatin-Black.woff') format('woff'),
+    url('/fonts/LatoLatin-Black.ttf') format('truetype'),
+    url('/fonts/LatoLatin-Black.svg#webfont') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* @font-face {
   font-family: 'body';
   src: url('/fonts/merriweather-bolditalic-webfont.eot');
@@ -119,18 +132,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .site h1 a,
 .site div#project__title,
 .site textarea#project__title {
-  font-family: 'body', serif;
-  font-size: 27px;
-  line-height: 1.5em;
+  font-family: 'meta', serif;
+  font-size: 3rem;
+  line-height: 1.2em;
   letter-spacing: -0.005em;
-  font-weight: bold;
+  font-weight: 900;
 	text-transform: none;
+	color: #181818;
 }
 
 .site h2,
 .site h2 a  {
   font-family: 'body', sans-serif;
-  font-size: 1.14rem;
+  font-size: 2rem;
   line-height: 1.38em;
   font-weight: 800;
 	text-transform: none;
@@ -143,8 +157,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .site div#project__description,
 .site textarea#project__description {
   font-family: 'meta', sans-serif;
-  font-size: 20px;
-  line-height: 1.5em;
+  font-size: 1.3rem;
+  line-height: 1.55em;
   letter-spacing: 0.01em;
   font-weight: 200;
 }
@@ -314,10 +328,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .site p {
   font-family: 'body', sans-serif !important;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.79em;
+	font-size: 1.09rem;
+  line-height: 1.85em;
   hyphens: auto;
-	letter-spacing: 0.007em;
+  letter-spacing: 0.00em;
+  word-spacing: 0.02em;
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
